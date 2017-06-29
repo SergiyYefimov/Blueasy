@@ -135,23 +135,124 @@ section{
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color: #515f67;
 }
-#portfolio .serviceWrap {
-  margin-top: 40px;
+#portfolio .secHeading h2{
+  margin: 0;
 }
-#portfolio .serviceWrap .serviceItem img:nth-child(2n){
-  margin-top: 30px;
+#portfolio .portfolioWrap {
+  margin-top: 15px;
+}
+.portfolioItem {
+  margin: 30px auto;
+  width: 270px;
+  height: 270px;
 }
 #portfolio .navigation{
-  height: 65px;}
+  height: 65px;
+}
 #portfolio .navigation li{
-  /*margin-top: 20px;*/
   line-height: 75px;
 }
 #portfolio .navigation a{
-  color: #333;
+  color: #515f67;
 }
 #portfolio .navigation li a:hover{
   color: #4bcaff;
+  line-height: 31px;
+}
+.portfolioItem{
+  position: relative;
+}
+#portfolio img{
+  /*z-index: 1;*/
+  position: absolute;
+}
+#portfolio .overlay{
+  font-size: 80px;
+  text-align: center;
+  line-height: 240px;
+  color: #fff;
+  background-color: rgba(53,63,71, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  opacity: 0;
+}
+#portfolio .overlay:hover{
+  opacity: 1;
+}
+/*===============================JUST DEFAULT SECTION===================================*/
+#defSection{
+  background-color: #515f67;
+  color: #fff;
+}
+#defSection p:nth-child(even) {
+  margin-top: 35px;
+}
+#defSection p:nth-child(odd) {
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
+#defSection button{
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 45px;
+  border: 2px #353f46 solid;
+  color: #353f46;
+  width: 140px;
+  transition: background-color,color .5s;
+}
+#defSection button:hover{
+  background-color: rgba(53,63,71, 0.9);
+  color: #fff;
+}
+/*=================================TWITTER=====================================*/
+#twitter{
+  background-color: #4bcaff;
+  color: #fff;
+}
+#twitter p {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: justify;
+  word-spacing: 2px;
+
+}
+#twitter p:nth-child(odd){
+  margin-top: 50px;
+}
+/*=================================WHO IS=====================================*/
+#whoIs{
+  background-image: url(../img/who-is.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  color: #fff;
+
+}
+#whoIs .secHeading{
+
+}
+#whoIs p:nth-child(1){
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#whoIs .socialIcons{
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px #fff solid;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 64px;
+}
+#whoIs a{
+  color: #fff;
 }
