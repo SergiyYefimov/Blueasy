@@ -124,7 +124,7 @@ header .headingWrap h1 span:first-child{
 header{
 	width: 100%;
 	height: 800px;
-	background-image: url(../img/headerBg.jpg);
+	background-image: url(../img/header_Bg.jpg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
