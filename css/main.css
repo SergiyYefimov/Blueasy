@@ -1,258 +1,436 @@
- /*navbg - rgba(53,63,70, 0.85)*/
- /*activelink #4bcaff*/
-*{  
-  font-family: Segoe UI;
+/*navbg - rgba(53,63,70, 0.85)
+activelink - #4bcaff
+*/
+*{
+	font-family: 'Segoe UI';
 }
-#wrapper{  width: 100%; }
-#content{  width: 100%; }
+#warpper,#content{
+	width: 100%;
+}
+
 ul.navigation{
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 ul.navigation li{
-  display: inline-block;
-  width: 19%;
-  text-align: center;
+	display: inline-block;
+	width: 18%;
+	text-align: center;
 }
 ul.navigation li a{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  display: block;
-  border: none;
-  transition: color .5s;
-  line-height: 35px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	display: block;
+	border: none;
+	line-height: 35px;
+	transition: color .5s;
 }
-ul.navigation li a:hover{
+nav ul.navigation li a:hover{
+	text-decoration: none;
+	line-height: 31px;
+	color: #4bcaff;
+	border: 2px #4bcaff solid;
+}
+#portfolio ul.navigation li a:hover{
+  text-decoration: none;
+  line-height: 31px;
   color: #4bcaff;
   border: 2px #4bcaff solid;
 }
-/*=================navbar================*/
-nav{
-  width: 100%;
-  height: 120px;
-  line-height: 120px;
-  background-color: rgba(53,63,70, 0.85);
-  color: #fff;
-  position: fixed;
-  z-index: 99;
-
-}
-nav ul.navigation li a{
-  color: #FFF;
-}
-/*======================header==================*/
-header{
-  width: 100%;
-  height: 800px;
-  background-image: url(../img/headerbg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-header .headingWrap{
-  padding-top: 400px;
-  
-}
-header .headingWrap h1{
-  text-transform: uppercase;
-  font-size: 30px;
-  letter-spacing: 3px;
-  font-weight: 100;
-  margin: 0;
-  color: #fff;
-  text-align: center;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-
-}
-header .headingWrap h1 span{
-  display: block;
-  
-}
-header .headingWrap h1 span:first-child{
-  padding-bottom: 10px;
-}
-h1{
-  background-image: url(../img/headbg.png);
-}
-/*=========================SECTIONS========================*/
 section{
-  padding: 80px 0;
-
+	width: 100%;
+	padding: 80px 0;
 }
-.secHeading {
-  width: 100%;
-  position: relative;
+
+
+.secHeading{
+	width: 100%;
+	position: relative;
 }
 .secHeading h2{
-  font-size: 24px;
-  font-weight: 300;
-  text-transform: uppercase;
-
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
 }
 .secHeading .headingLine{
-  position: absolute;
-  top: 30px;
-  width: 45px;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
+	width: 45px;
+	height: 3px;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
 }
+
+
+/*__________navbar______________*/
+
+nav{
+	/*height: 150px;*/
+	padding: 60px 0;
+	/*line-height: 150px;*/
+	width: 100%;
+	background-color: rgba(53,63,70, 0.85);
+	position: fixed;
+	z-index: 99;
+}
+
+nav ul.navigation li a{
+	color: #fff;
+}
+
+
+
+/*___________header___________________*/
+/*___firstVariant*/
+/*header{
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/headerBg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+header .headingWrap{
+	padding-top: 400px;
+	background-repeat: no-repeat;
+}
+header .headingWrap h1{
+	text-transform: uppercase;
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin: 0;
+	color: #fff;
+	text-align: center;
+	background-image: url(../img/hedingBg.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+header .headingWrap h1 span{
+	display: block;
+}
+header .headingWrap h1 span:first-child{
+	padding-bottom: 5px;
+}*/
+
+
+/*_____secondVariant*/
+
+header{
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/headerBg.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header .heading{
+	padding-top: 400px;
+	position: relative;
+	text-align: center;
+}
+header .heading h1{
+	position: absolute;
+	top: 400px;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 40px;
+	margin: 0;
+}
+header .heading h1 span{
+	display: block;
+	background: rgba(53,63,70, 0.85);
+    width: 85%;
+    margin: 10px auto;
+    padding: 20px 10px;
+}
+header .heading h1 span:first-child{
+	width: 60%;
+}
+
+/*header .heading img{
+	width: auto;
+	height: auto;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*_______services__________*/
+
 #services{
-  background-color: #4bcaff;
+	background-color: #4bcaff;
 }
 #services .secHeading h2{
-  color: #fff;
+	color: #fff;
 }
-#services .serviceWrap {
-  margin-top: 40px;
+#services .secHeading .headingLine{
+	background-color: #fff;
 }
-#services .serviceWrap .serviceItem{
-  height: 175px;
+#services .serviceWrap{
+	margin-top: 40px;
+}
 
+#services .serviceWrap .serviceItem{
+	height: 175px;
+	color: #fff;
 }
 #services .serviceWrap .serviceItem h4{
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 18px;
-  font-weight: semi-bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: semi-bold;
+	margin-top: 25px;
+	margin-bottom: 20px;
 }
 #services .serviceWrap .serviceItem p{
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0;
+	font-size: 12px;
+	margin: 0;
 }
-/*===========================PORTFOLIO============================*/
-#portfolio .headingLine{
-  position: absolute;
-  top: 30px;
-  width: 45px;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #515f67;
-}
+
+/*_______________portfolio*/
+
+
+
+
 #portfolio .secHeading h2{
-  margin: 0;
+	color: #515f67;
 }
-#portfolio .portfolioWrap {
-  margin-top: 15px;
+#portfolio .secHeading .headingLine{
+	background-color: #515f67;
 }
-.portfolioItem {
-  margin: 30px auto;
-  width: 270px;
-  height: 270px;
+
+#portfolio ul.navigation li a{
+	color: #69747b;
 }
-#portfolio .navigation{
-  height: 65px;
+#portfolio ul.navigation li a:hover{
+	color: #4bcaff;
 }
-#portfolio .navigation li{
-  line-height: 75px;
+
+
+#portfolio .portfolioWrap{
+	margin-top: 65px;
 }
-#portfolio .navigation a{
-  color: #515f67;
+#portfolio .portfolioWrap .portfolioItem{
+	width: 270px;
+	height: 270px;
+	margin: 15px auto;
+	position: relative;
 }
-#portfolio .navigation li a:hover{
-  color: #4bcaff;
-  line-height: 31px;
+
+#portfolio .portfolioWrap .portfolioItem .overlay{
+	width: 100%;
+	height: 100%;
+	line-height: 270px;
+	text-align: center;
+	background-color: rgba(53,63,71, 0.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .5s;
 }
-.portfolioItem{
-  position: relative;
+#portfolio .portfolioWrap .portfolioItem:hover .overlay{
+	opacity: 1;
 }
-#portfolio img{
-  /*z-index: 1;*/
-  position: absolute;
-}
-#portfolio .overlay{
-  font-size: 80px;
-  text-align: center;
-  line-height: 240px;
-  color: #fff;
-  background-color: rgba(53,63,71, 0.6);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 12;
-  opacity: 0;
-}
-#portfolio .overlay:hover{
-  opacity: 1;
-}
-/*===============================JUST DEFAULT SECTION===================================*/
+
+
+/*____________defSection*/
+
 #defSection{
-  background-color: #515f67;
-  color: #fff;
+	color: #fff;
+	background-color: #515f67;
 }
-#defSection p:nth-child(even) {
-  margin-top: 35px;
+/*35
+75*/
+/*#defSection .secHeading h2{
+	background-color: #fff;
+}*/
+
+#defSection .secHeading .headingLine{
+	background-color: #fff;
 }
-#defSection p:nth-child(odd) {
-  margin-top: 35px;
-  margin-bottom: 70px;
+
+#defSection p:nth-child(2){
+	margin-top: 16px;
+}
+#defSection p:nth-child(3){
+	margin: 35px 0 75px;
 }
 #defSection button{
-  outline: none;
-  font-size: 14px;
-  background-color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 45px;
-  border: 2px #353f46 solid;
-  color: #353f46;
-  width: 140px;
-  transition: background-color,color .5s;
+	width: 140px;
+	line-height: 45px;
+	border: 2px #353f46 solid;
+	outline: none;
+	color: #353f46;
+	background-color: transparent;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background-color .5s;
 }
 #defSection button:hover{
-  background-color: rgba(53,63,71, 0.9);
-  color: #fff;
+	background-color: #fff;
 }
-/*=================================TWITTER=====================================*/
+
+
+
+/*_____________twitter*/
+
 #twitter{
-  background-color: #4bcaff;
-  color: #fff;
+	background-color: #4bcaff;
+	color: #fff;
 }
-#twitter p {
-  font-size: 22px;
-  font-weight: 300;
-  text-align: justify;
-  word-spacing: 2px;
+#twitter .secHeading .headingLine{
+	background-color: #fff;
+}
+#twitter p{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 300;
+	margin-top: 50px;
+	text-align: justify;
+}
+#twitter p span{
+	font-weight: 700;
+}
 
-}
-#twitter p:nth-child(odd){
-  margin-top: 50px;
-}
-/*=================================WHO IS=====================================*/
+
+/*____________whois*/
 #whoIs{
-  background-image: url(../img/who-is.png);
-  height: 500px;
+	height: 500px;	
+	background-image: url(../img/whoIsBg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+#whoIs .secHeading .headingLine{
+	background-color: #fff;
+}
+#whoIs p:first-child{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+#whoIs .social .socIcon{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border: 2px #fff solid;
+	margin: 0 10px;
+	text-align: center;
+}
+#whoIs .social .socIcon a{
+	color: #fff;
+}
+#whoIs .social .socIcon:first-child{
+	margin-left: 0;
+}
+
+
+
+/*________testimonials*/
+#testimonials{
+	color: #515f67;
+}	
+#testimonials .secHeading .headingLine{
+	background-color: #515f67;
+}
+#testimonials p:nth-child(2){
+	margin-top: 50px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 300;
+	/*text-align: justify;*/
+	margin-bottom: 45px;
+}
+#testimonials p:nth-child(3){
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4bcaff;
+}
+/*_______contacts*/
+#contacts {
+  height: 815px;
+  color: #fff;
+  background-image: url(../img/contactsBg.png);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  /*background-attachment: fixed;*/
-  color: #fff;
-
 }
-#whoIs .secHeading{
-
+#contacts .secHeading .headingLine{
+  background-color: #fff;
 }
-#whoIs p:nth-child(1){
+.contactsContentOne{
   margin-top: 40px;
-  margin-bottom: 40px;
 }
-#whoIs .socialIcons{
-  display: inline-block;
-  margin-right: 10px;
-  border: 2px #fff solid;
-  width: 60px;
+.contactsContentTwo{
+  margin-top: 58px;
+}
+.contactsContentTwo p:nth-child(2){
+  margin-top: 50px;
+  font-size: 14px;
+}
+#contacts label{
+  text-transform: uppercase;
+}
+#exampleInputName, #exampleInputEmail, #exampleInputText{
+ height: 56px;
+ border-radius: 0;
+ border-color: #fff;
+ border-width: 2px;
+ background-color: transparent;
+ margin-bottom: 40px;
+ color: #fff;
+}
+#exampleInputText{
+  height: 220px;
+  line-height: 0;
+}
+#contacts button{
+  width: 370px;
   height: 60px;
-  text-align: center;
-  line-height: 64px;
-}
-#whoIs a{
+  line-height: 56px;
+  border: 2px #4bcaff solid;
+  outline: none;
   color: #fff;
+  background-color: #4bcaff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: border-color .5s;
+}
+#contacts button:hover{
+  border-color: #fff;
+}
+/*FOOTER*/
+footer{
+  height: 170px;
+  background-color: #353f47;
+}
+footer ul.navigation li a{
+  margin-top: 70px;
+  height: 20px;
+  color: #515f67;
+  border-right: 1px solid;
+  line-height: 20px;
+}
+footer p{
+  margin-top: 70px;
+  color: #515f67;
+  font-size: 16px;
 }
