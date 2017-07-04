@@ -302,7 +302,7 @@ header .heading h1 span:first-child{
 
 /*____________whois*/
 #whoIs{
-	height: 500px;	
+	height: 500px;
 	background-image: url(../img/whoIsBg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -323,9 +323,17 @@ header .heading h1 span:first-child{
 	border: 2px #fff solid;
 	margin: 0 10px;
 	text-align: center;
+	transition: border .5s;
+}
+#whoIs .social .socIcon:hover{
+	border: 2px #515f67 solid;
 }
 #whoIs .social .socIcon a{
 	color: #fff;
+	transition: color .5s;
+}
+#whoIs .social .socIcon a:hover{
+	color: #515f67;
 }
 #whoIs .social .socIcon:first-child{
 	margin-left: 0;
@@ -336,7 +344,7 @@ header .heading h1 span:first-child{
 /*________testimonials*/
 #testimonials{
 	color: #515f67;
-}	
+}
 #testimonials .secHeading .headingLine{
 	background-color: #515f67;
 }
@@ -378,7 +386,7 @@ header .heading h1 span:first-child{
 #contacts label{
   text-transform: uppercase;
 }
-#exampleInputName, #exampleInputEmail, #exampleInputText{
+#exampleInputName, #exampleInputEmail, #exampleInputText, #textEntry1 {
  height: 56px;
  border-radius: 0;
  border-color: #fff;
@@ -387,10 +395,17 @@ header .heading h1 span:first-child{
  margin-bottom: 40px;
  color: #fff;
 }
-#exampleInputText{
+/*#exampleInputText{
   height: 220px;
   line-height: 0;
+}*/
+#contacts .form-control {
+	background-color: transparent;
+	border-radius: 0;
+	border-color: #fff;
+	border-width: 2px;
 }
+
 #contacts button{
   width: 370px;
   height: 60px;
